@@ -48,7 +48,7 @@ import Link from "next/link";
 //     return (
 //       <svg
 //         xmlns="http://www.w3.org/2000/svg"
-//         class="h-5 w-5"
+//         className="h-5 w-5"
 //         fill="currentColor"
 //         viewBox="0 0 24 24"
 //       >
@@ -158,38 +158,38 @@ import Link from "next/link";
 //               <div className="flex items-center justify-between mb-10">
 //                 <label className="flex items-center">
 //                   <input type="checkbox" />
-//                   <span class="ml-2 text-gray-700">Remember Me</span>
+//                   <span className="ml-2 text-gray-700">Remember Me</span>
 //                 </label>
-//                 <a href="#" class="text-blue-500 hover:underline">
+//                 <a href="#" className="text-blue-500 hover:underline">
 //                   I forgot my password
 //                 </a>
 //               </div>
 
-//               <div class="mb-4">
+//               <div className="mb-4">
 //                 <button
 //                   type="submit"
-//                   class="w-full border-primary bg-primary p text-white py-2 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600  transition hover:bg-opacity-90 cursor-pointer"
+//                   className="w-full border-primary bg-primary p text-white py-2 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600  transition hover:bg-opacity-90 cursor-pointer"
 //                 >
 //                   Sign In
 //                 </button>
 //               </div>
 //             </form>
 
-//             <div class="text-center text-gray-500 mb-4">- OR -</div>
+//             <div className="text-center text-gray-500 mb-4">- OR -</div>
 
-//             <div class="flex flex-col gap-3">
+//             <div className="flex flex-col gap-3">
 //               {/* <button className="flex items-center justify-center gap-2 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 focus:outline-none">
 //                 <FaceBookIcon />
 //                 Sign in using Facebook
 //               </button> */}
-//               <button class="flex w-full items-center justify-center gap-3.5 rounded-lg border border-[#E2E8F0] bg-[#EFF4FB] p-4 hover:bg-opacity-50 dark:border-[#2E3A47] dark:bg-[#313D4A] dark:hover:bg-opacity-50">
+//               <button className="flex w-full items-center justify-center gap-3.5 rounded-lg border border-[#E2E8F0] bg-[#EFF4FB] p-4 hover:bg-opacity-50 dark:border-[#2E3A47] dark:bg-[#313D4A] dark:hover:bg-opacity-50">
 //                 <GoogleIcon />
 //                 Sign in using Google+
 //               </button>
 //             </div>
 
-//             <div class="text-center mt-4">
-//               <a href="#" class="text-blue-500 hover:underline">
+//             <div className="text-center mt-4">
+//               <a href="#" className="text-blue-500 hover:underline">
 //                 Register a new membership
 //               </a>
 //             </div>
@@ -347,17 +347,17 @@ export default function LoginPage() {
               <div className="flex items-center justify-between mb-8">
                 <label className="flex items-center">
                   <input type="checkbox" />
-                  <span class="ml-2 text-gray-700">Remember Me</span>
+                  <span className="ml-2 text-gray-700">Remember Me</span>
                 </label>
-                <a href="#" class="text-blue-500 hover:underline">
+                <a href="#" className="text-blue-500 hover:underline">
                   I forgot my password
                 </a>
               </div>
 
-              <div class="mb-4">
+              <div className="mb-4">
                 <button
                   type="submit"
-                  class="w-full cursor-pointer  border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
+                  className="w-full cursor-pointer  border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
                 >
                   Sign In
                 </button>
