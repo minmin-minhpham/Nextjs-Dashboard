@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-export default function SidebarDropdown({ pageName, items, demo }) {
+export default function SidebarDropdown({ items, isSelected  }) {
   const pathname = usePathname();
 
   return (
