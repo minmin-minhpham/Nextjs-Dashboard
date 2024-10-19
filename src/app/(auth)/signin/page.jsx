@@ -301,7 +301,7 @@ export default function LoginPage() {
               id={id}
               type={type}
               placeholder={placeholder}
-              className=" w-full border border-stroke px-3 py-2 text-black outline-none focus:border-blue-400 focus-visible:shadow-none dark:border-[#3d4d60] dark:bg-[#1d2a39] dark:text-white dark:focus:border-primary"
+              className="w-full border border-stroke px-3 py-2 text-black outline-none focus:border-blue-400 focus-visible:shadow-none dark:border-[#3d4d60] dark:bg-[#1d2a39] dark:text-white dark:focus:border-primary"
             />
             {icon && (
               <span className="absolute inset-y-0 right-3 flex items-center">
@@ -316,74 +316,64 @@ export default function LoginPage() {
 
   return (
     <>
-      {/* <div className=""> */}
-        <div className="w-[460px] max-sm:w-[90%]">
-          <div className="mb-3 text-center font-light text-[#495057] text-[2.1rem]">
-            <Link href="">
-              <b>Admin</b>LTE
+      <div className="bg-white shadow-lg px-10 py-12">
+        <p className="px-5 pb-5 text-center text-gray-500">
+          Sign in to start your session
+        </p>
+        <form className="">
+          <InputField
+            id="email"
+            label="Email"
+            type="email"
+            placeholder="Enter your email"
+            icon={<EmailIcon />}
+          />
+          <InputField
+            id="pass"
+            label="Password"
+            type="password"
+            placeholder="6+ Charaters, 1 Capital letter"
+            icon={<PasswordIcon />}
+          />
+
+          <div className="flex items-center justify-between mb-8">
+            <label className="flex items-center">
+              <input type="checkbox" />
+              <span className="ml-2 text-gray-700">Remember Me</span>
+            </label>
+            <Link className="text-blue-500 hover:underline" href='/forgot-password'>
+              I forgot my password
             </Link>
           </div>
 
-          <div className="bg-white shadow-lg px-10 py-12">
-            <p className="px-5 pb-5 text-center text-gray-500">
-              Sign in to start your session
-            </p>
-            <form className="">
-              <InputField
-                id="email"
-                label="Email"
-                type="email"
-                placeholder="Enter your email"
-                icon={<EmailIcon />}
-              />
-              <InputField
-                id="pass"
-                label="Password"
-                type="password"
-                placeholder="6+ Charaters, 1 Capital letter"
-                icon={<PasswordIcon />}
-              />
-
-              <div className="flex items-center justify-between mb-8">
-                <label className="flex items-center">
-                  <input type="checkbox" />
-                  <span className="ml-2 text-gray-700">Remember Me</span>
-                </label>
-                <a href="#" className="text-blue-500 hover:underline">
-                  I forgot my password
-                </a>
-              </div>
-
-              <div className="mb-4">
-                <button
-                  type="submit"
-                  className="w-full cursor-pointer  border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
-                >
-                  Sign In
-                </button>
-              </div>
-
-              <div className="mb-12">
-                <button className="flex w-full items-center justify-center gap-3.5 border border-[#E2E8F0] bg-[#EFF4FB] p-4 hover:bg-opacity-50 dark:border-[#2E3A47] dark:bg-[#313D4A] dark:hover:bg-opacity-50">
-                  <span>
-                    <GoogleIcon />
-                  </span>
-                  Sign in with Google
-                </button>
-              </div>
-
-              <div className=" text-center">
-                <p>
-                  Don’t have any account?
-                  <Link href="/auth/signup" className="text-primary">
-                    Sign Up
-                  </Link>
-                </p>
-              </div>
-            </form>
+          <div className="mb-4">
+            <button
+              type="submit"
+              className="w-full cursor-pointer  border border-primary bg-primary p-4 text-white transition hover:bg-opacity-90"
+            >
+              Sign In
+            </button>
           </div>
+
+          <div className="mb-12">
+            <button className="flex w-full items-center justify-center gap-3.5 border border-[#E2E8F0] bg-[#EFF4FB] p-4 hover:bg-opacity-50 dark:border-[#2E3A47] dark:bg-[#313D4A] dark:hover:bg-opacity-50">
+              <span>
+                <GoogleIcon />
+              </span>
+              Sign in with Google
+            </button>
+          </div>
+        </form>
+
+        <div className="text-center">
+          <p>
+            Don’t have any account?&nbsp;
+            <Link href="/signup" className="text-primary">
+              Sign Up
+            </Link>
+          </p>
         </div>
-      {/* </div> */}
+      </div>
     </>
   );
 }
