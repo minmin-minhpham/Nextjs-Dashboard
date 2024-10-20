@@ -17,7 +17,11 @@ export default function DefaultLayout({ children }) {
         }`}
       >
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-        <div className="flex-1 bg-gray-200 dark:bg-[#1A222C] ">{children}</div>
+        <div className="flex-1 bg-gray-200 dark:bg-[#1A222C] ">
+          <div className="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
+            {children}
+          </div>
+        </div>
       </main>
     </div>
   );

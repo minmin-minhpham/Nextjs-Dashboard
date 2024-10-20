@@ -1,10 +1,17 @@
 "use client";
 
-import { FaDashcube, FaUser, FaCalendarAlt } from "react-icons/fa";
+import {
+  FaDashcube,
+  FaUser,
+  FaCalendarAlt,
+  FaCalendar,
+  FaWpforms,
+} from "react-icons/fa";
 
 import SidebarLogo from "../Sidebar/SidebarLogo";
 import SidebarItem from "../Sidebar/SidebarItem";
 import useLocalStorage from "@/hooks/useLocalStorage";
+import { CiLogout } from "react-icons/ci";
 // import dynamic from "next/dynamic";
 
 // const SidebarItem = dynamic(() => import("../Sidebar/SidebarItem"), {
@@ -20,17 +27,21 @@ const menuGroups = [
         icon: <FaDashcube size={sizeIcon} />,
         label: "Dashboard",
         route: "/admin/dashboard",
-        // children: [
-        //   { label: "dashboard_1", route: "/admin/dashboard/dashboard_1" },
-        //   { label: "dashboard_2", route: "/admin/dashboard/dashboard_2" },
-
-        // ],
       },
-    ],
-  },
-  {
-    name: "Other",
-    items: [
+      {
+        icon: <FaCalendar size={sizeIcon} />,
+        label: "Calendar",
+        route: "/admin/calendar",
+      },
+      {
+        icon: <FaWpforms size={sizeIcon} />,
+        label: "Forms",
+        route: "#",
+        children: [
+          { label: "Form Elements", route: "/admin/forms/elements" },
+          { label: "Form Layouts", route: "/admin/forms/layouts" },
+        ],
+      },
       {
         icon: <FaUser size={sizeIcon} />,
         label: "Profile",
@@ -38,7 +49,20 @@ const menuGroups = [
       },
     ],
   },
-  
+  {
+    name: "Other",
+    items: [
+      {
+        icon: <CiLogout size={sizeIcon} />,
+        label: "Authentication",
+        route: "#",
+        children: [
+          { label: "Sign In", route: "/signin" },
+          { label: "Sign Up", route: "/signup" },
+        ],
+      },
+    ],
+  },
 ];
 
 export default function Sidebar({ sidebarOpen, setSidebarOpen }) {

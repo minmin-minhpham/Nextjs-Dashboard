@@ -61,7 +61,7 @@ export default function DropdownUser() {
               <ul className="flex flex-col gap-5 px-6 py-7 border-b border-[#e2e8f0] dark:border-[#2e3a47] text-[#64748B] dark:text-white">
                 <li>
                   <Link
-                    href="/profile"
+                    href="/admin/profile"
                     className="flex items-center gap-3.5 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base"
                   >
                     <FaUser size={size} />
