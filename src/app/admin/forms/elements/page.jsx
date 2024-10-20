@@ -49,19 +49,19 @@ export default function FormElement() {
               />
             </div>
           </div>
+        </div>
 
-          <div className="rounded-sm border border-[#E2E8F0] bg-white shadow-default dark:border-[#2E3A47] dark:bg-[#24303F]">
-            <div className="border-b border-[#E2E8F0] px-6 py-4 dark:border-[#2E3A47]">
-              <h3 className="font-medium text-black dark:text-white">
-                Toggle switch input
-              </h3>
-            </div>
-            <div className="flex flex-col gap-5.5 p-6.5">
-              <SwitcherOne />
-              <SwitcherTwo />
-              <SwitcherThree />
-              <SwitcherFour />
-            </div>
+        <div className="rounded-sm border border-[#E2E8F0] bg-white shadow-default dark:border-[#2E3A47] dark:bg-[#24303F]">
+          <div className="border-b border-[#E2E8F0] px-6 py-4 dark:border-[#2E3A47]">
+            <h3 className="font-medium text-black dark:text-white">
+              Toggle switch input
+            </h3>
+          </div>
+          <div className="flex flex-col gap-5 p-6">
+            <SwitcherOne />
+            <SwitcherTwo />
+            <SwitcherThree />
+            <SwitcherFour />
           </div>
         </div>
       </div>
